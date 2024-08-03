@@ -1,0 +1,60 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Solar Information</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/wind.css">
+</head>
+<body>
+	<nav class="navbar">
+		<img src="img/logo1.png" alt="logo" width="80px" id="logo" height="75px" >
+		<span id="right">
+		
+		<div class="bar"><a class="link" href="aboutus.html">ABOUT</a></div>
+		<div class="bar"><a class="link" href="renewable_resouces.html">RESOURCES</a></div>
+		<div class="bar"><a class="link"  href="sustainable development stats revised.html">STATISTICS</a></div>
+		<div class="bar"><a class="link" href="sustainable dev tools revised.html">TOOLS</a></div>
+		<div class="bar"><a class="link" href="community.html">JOIN US</a></div>
+		<div class="bar"><a class="link" href="form.html">OTHER</a></div>
+		<button id="btn"><a href="login.html">LOGIN</a></button></span>
+	  </nav>
+</nav>
+	<div class="container">
+		<h1>Solar Information</h1><br>
+		<div class="wind-info">
+			<h2>Solar Energy</h2>
+			<p>Solar energy is a powerful, renewable energy source derived from the sun's radiation. This energy can be converted into electricity or heat and has numerous applications ranging from residential power generation to large-scale industrial processes. As one of the most sustainable forms of energy, solar power offers a multitude of benefits that contribute to a cleaner and more sustainable future.
+
+            </p>
+			<!-- <p><span class="wind-speed"></span></p>
+			<p><span class="wind-direction"></span></p> -->
+			<img src="assets/solar1.jpg" alt="Wind Turbine" class="wind-image">
+		</div>
+		<div class="forecast">
+			<h2>Types of solar energy</h2>
+			<ul>
+				<li>
+					<span>1) Photovoltaic systems use solar panels composed of semiconductor materials, typically silicon, to directly convert sunlight into electricity. When sunlight strikes the solar cells, it excites electrons, creating an electric current. These systems are versatile and can be installed on rooftops, in solar farms, and even integrated into building materials.</span> 
+
+				</li>
+				<li>
+					<span>2) Solar thermal systems capture and use the sun's heat. These systems can be used for water heating, space heating, and generating electricity. Solar thermal collectors, such as flat-plate collectors or evacuated tube collectors, absorb sunlight and convert it into thermal energy.</span> 
+					
+				</li>
+				<li>
+					<span>3) CSP systems use mirrors or lenses to concentrate sunlight onto a small area to produce high temperatures. This concentrated energy is used to heat a fluid, generating steam that drives a turbine to produce electricity. CSP plants are typically large-scale installations found in areas with high solar insolation</span> 
+					
+				</li>
+			</ul><br><br>
+			<canvas id="usageChart" width="400" height="200"></canvas>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
+

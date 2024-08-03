@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Joining Form</title>
+  <link rel="stylesheet" href="community.css">
+  <style type="text/css">
+    .form{
+    border: 3px solid;
+    padding: 20px;
+    margin:1rem;
+    }
+    #terms{
+      color: red;
+      font-weight: bold;
+    }
+    .ques, .info{
+    margin: 5px 10px 5px 0;
+    font-weight: bold;
+    font-size: 13pt;
+    }
+    input{
+    margin: 5px 10px 5px 0;
+    padding:10px;
+    }
+    input[type=text]{
+    height:50px;
+    width:30%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius:4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    }
+    textarea{
+    width: 50%;
+    height:150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius:4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+    }
+    input[type=radio],input[type=submit]{
+    padding: 10px;
+    cursor:pointer;
+  }
+    
+    h1{
+      text-align: center;
+      margin-left:5rem;
+      margin-top:2rem;
+      margin-bottom: 3rem;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 40pt;
+      text-shadow: 4px 4px 4px lightgreen;
+    }
+    
+    #note{
+      
+      font-size: 13pt;
+    }
+    span{
+      margin-left: 1.7rem;;
+    }
+    
+    #btn1{
+        margin-left: 50%;
+        transform: translate(-50%);
+        color:white;
+        background-color: black;
+        border-radius: 10px;
+        height:3rem;
+        width:6rem;
+        font-size: large;
+    }
+    .show{
+      height:70vh;
+      position:relative;
+      top:5rem;
+      
+    }
+    #tick{
+      margin-left:33rem;
+      position:relative;
+      bottom:2rem;
+      
+    }
+    .msg{
+      text-align: center;     
+      font-size: 30pt;
+      
+    }
+    #home{
+      font-size: 25pt;
+      margin-top:3rem;
+      margin-left:48%;
+      border-radius: 10px;
+      border:solid;
+      background-color: black;
+      color:rgb(252, 250, 250);
+      padding:1rem;
+      cursor: pointer;
+    }
+.hide{
+  display: none;
+}
+    
+    </style>
+</head>
+<body>
+  <nav class="navBar">
+    <img src="img/logo1.png" alt="logo" width="80px" id="logo" height="75px" >
+    <span id="right">
+    
+    <div class="bar"><a class="link" href="aboutus.html">ABOUT</a></div>
+    <div class="bar"><a class="link" href="renewable_resouces.html">RESOURCES</a></div>
+    <div class="bar"><a class="link"  href="sustainable development stats revised.html">STATISTICS</a></div>
+    <div class="bar"><a class="link" href="sustainable dev tools revised.html">TOOLS</a></div>
+    <div class="bar"><a class="link" href="community.html">JOIN US</a></div>
+    <div class="bar"><a class="link" href="form.html">OTHER</a></div>
+    <button id="btn"><a href="login.html">LOGIN</a></button></span>
+  </nav>
+  </span>
+  </nav>
+  <hr>
+  <div class="show hide">
+  <img src="img/tick1.webp" width="130px"  id="tick">
+  <h2 class="msg"> The form has been submitted. We will contact you soon</h2>
+  <button id="home"><a href="indeeeex.html" style="text-decoration: none; color:white" >Go to Home</a></button>
+</div>
+<section class="part">
+  <h1 style="color:green">COMMUNITY FORM</h1>
+<div class="form">
+<form  >
+<label class="info" >Name</label><br><input type="text" name="name" placeholder="Enter your name" required><br><br>
+
+<label class="info">Email Address</label><br><input type="text" name="email" placeholder="Enter your 
+Email" required><br><br>
+
+<label class="info">Phone Number</label><br><input type="text" name="pno" placeholder="Enter your Phone no" required><br><br>
+
+<label class="info">Address</label><br><textarea name="address" rows="5" cols="20" placeholder="Enter your Address" required></textarea><br><br>
+
+<p class="ques">What interests you about renewable energy?</p><br>
+
+<input type="radio" name="r1" ><label>Reducing carbon footprint</label><br>
+<input type="radio" name="r1" ><label>Saving on energy costs</label><br>
+<input type="radio" name="r1" ><label>Supporting local initiatives</label><br>
+<input type="radio" name="r1" ><label>Learning more about sustainable practices</label><br><br>
+
+<p class="ques">Which renewable energy sources are you most interested in?</p><br>
+<input type="radio" name="r2"><label>Solar Power</label><br>
+<input type="radio" name="r2"><label>Wind Energy</label><br>
+<input type="radio" name="r2"><label>Hydroelectric Power</label><br>
+<input type="radio" name="r2"><label>Geothermal Energy</label><br>
+<input type="radio" name="r2"><label>Biomass</label><br><br>
+
+<p class="ques">Do you have any existing renewable energy installations at your home or business?</p><br>
+<input type="radio" name="r3"><label>Yes</label><br>
+<input type="radio" name="r3"><label>No</label><br>
+
+<p class="ques">How would you like to contribute to the community?</p><br>
+<input type="radio" name="r4"><label>Volunteering for events and initiatives</label><br>
+<input type="radio" name="r4"><label>Sharing expertise or skills(e.g., technical knowledge, marketing, organizing)</label><br>
+<input type="radio" name="r4"><label>Hosting events or meetings</label><br>
+<input type="radio" name="r4"><label>Providing financial support</label><br><br>
+
+<p class="ques">How did you hear about our renewable energy community?</p><br>
+<input type="radio" name="r5"><label>Social Media</label><br>
+<input type="radio" name="r5"><label>Friend or family member</label><br>
+<input type="radio" name="r5"><label>Community event</label><br>
+<input type="radio" name="r5"><label>Local news or media</label><br>
+<input type="radio" name="r5"><label>Other</label><br><br><br>
+<p id="terms"></p>
+
+<label class="info">PRIVACY NOTICE :</label><br><br>
+<input type="checkbox" name="c1" id="check"><label class="info" id="note">
+By submitting this form, you agree to share your information with the renewable energy community for the purpose of communication and participation <span> in activities.Your information will not be shared with third parties without your consent.</span></p></label><br>
+<input type="submit" value="Submit" id="btn1"><br>
+</form>
+</div></section>
+<script src="community.js"></script>
+  
+</body>
+</html>
+
+
+  

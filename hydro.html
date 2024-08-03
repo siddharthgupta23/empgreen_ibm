@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydro Chart</title>
+    <link rel="stylesheet" href="css/hydro.css">
+</head>
+<body>
+    <nav class="navBar">
+        <img src="img/logo1.png" alt="logo" width="80px" id="logo" height="75px" >
+        <span id="right">
+        
+        <div class="bar"><a class="link" href="aboutus.html">ABOUT</a></div>
+        <div class="bar"><a class="link" href="renewable_resouces.html">RESOURCES</a></div>
+        <div class="bar"><a class="link"  href="sustainable development stats revised.html">STATISTICS</a></div>
+        <div class="bar"><a class="link" href="sustainable dev tools revised.html">TOOLS</a></div>
+        <div class="bar"><a class="link" href="community.html">JOIN US</a></div>
+        <div class="bar"><a class="link" href="form.html">OTHER</a></div>
+        <button id="btn"><a href="login.html">LOGIN</a></button></span>
+      </nav>
+    <div class="hydro">
+    <h1>Hydro Data<br><br>
+    Hydro Data Visualization</h1>
+    <div class="content">
+        <p>
+            This page provides a visualization of water usage data over the first half of the year. Understanding water consumption patterns can help in making informed decisions about water resource management, promoting sustainability, and addressing issues related to water scarcity.
+        </p>
+        <div class="image-container">
+            <img src="assets/hydro-image.jpg" alt="Hydro Image">
+        </div>
+        <div class="chart-container">
+            <canvas id="hydroChart"></canvas>
+        </div>
+    </div>
+
+    <div class="chart-container">
+        <canvas id="hydroChart"></canvas>
+    </div></div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/hydro.js"></script>
+</body>
+</html>

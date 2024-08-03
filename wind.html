@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wind Information</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/wind.css">
+</head>
+<body>
+	<nav class="navbar">
+		<img src="assets/logo1.png" alt="logo" width="80px" id="logo" height="75px" >
+		<span id="right"><div class="bar"><a href="aboutus.html">ABOUT</a></div>
+		<div class="bar"><a href="renewable_resouces.html">RESOURCES</a></div>
+		<div class="bar"><a href="sustainable development stats revised.html">STATISTICS</a></div>
+		<div class="bar"><a href="sustainable dev tools revised.html">TOOLS</a></div>
+		<div class="bar"><a href="community.html">JOIN US</a></div>
+		<div class="bar"><a href="form.html">OTHER</a></div>
+		<button id="btn"><a href="login.html">LOGIN</a></button></span>
+</nav>
+	<div class="container">
+		<h1>Wind Information</h1>
+		<div class="wind-info">
+			<h2>Current Wind Conditions</h2>
+			<p>Wind energy is generated using wind turbines. It is a renewable source that can be harnessed in windy regions.</p>
+			<p>Wind Speed: <span class="wind-speed">15 mph</span></p>
+			<p>Wind Direction: <span class="wind-direction">Northwest</span></p>
+			<img src="assets/wind-turbine.jpg" alt="Wind Turbine" class="wind-image">
+		</div>
+		<div class="forecast">
+			<h2>Wind Forecast</h2>
+			<ul>
+				<li>
+					<span>Today:</span> 15 mph, Northwest
+					<img src="assets/wind-northwest.jpg" alt="Wind Northwest" class="wind-direction-image">
+				</li>
+				<li>
+					<span>Tonight:</span> 10 mph, West
+					<img src="assets/wind-west.jpg" alt="Wind West" class="wind-direction-image">
+				</li>
+				<li>
+					<span>Tomorrow:</span> 20 mph, Southwest
+					<img src="assets/wind-southwest.jpg" alt="Wind Southwest" class="wind-direction-image">
+				</li>
+			</ul>
+			<canvas id="wind-chart" width="400" height="200"></canvas>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="js/wind.js"></script>
+</body>
+</html>

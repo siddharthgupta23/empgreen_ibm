@@ -1,0 +1,137 @@
+
+
+.navbar{
+  display: flex;
+  justify-content:space-between;
+  background-color:#c1ff72;
+}
+
+a{
+  text-decoration:none;
+  color:black
+}
+.bar{
+  margin-top: 2rem;
+}
+.bar:hover{
+text-decoration: underline;
+}
+#right{
+  width:53%;
+  display:flex;
+  gap:1.5rem; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#btn{
+  margin:1rem;
+  padding:0.5rem;
+  height:40px;
+  width:90px;
+  font-size: 12pt;
+  border-radius: 8px;
+  background-color: orange;
+  border:solid black;
+  border-width:2px;
+}
+#logo{
+  margin-left:1rem; 
+}
+h1,h2{
+  font-family: 'Times New Roman', Times, serif;
+ 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+  }
+  
+  .wind-info {
+    margin-bottom: 20px;
+    /* text-align: center; */
+  }
+  
+  .wind-info h2 {
+    margin-top: 0;
+    /* text-align:center; */
+  }
+  
+  .wind-speed, .wind-direction {
+    font-weight: bold;
+  }
+  
+  .wind-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .forecast {
+    margin-bottom: 20px;
+  }
+  
+  .forecast h2 {
+    margin-top: 0;
+  }
+  
+  .forecast ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .forecast li {
+    margin-bottom: 10px;
+  }
+  
+  .forecast li span {
+    font-weight: bold;
+  }
+  
+  .wind-direction-image {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+  }
+  
+  #wind-chart {
+    width: 100%;
+    height: 400px;
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      margin: 20px auto;
+    }
+    .wind-image {
+      height: 150px;
+    }
+    #wind-chart {
+      height: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      margin: 10px auto;
+    }
+    .wind-image {
+      height: 100px;
+    }
+    #wind-chart {
+      height: 200px;
+    }
+  }

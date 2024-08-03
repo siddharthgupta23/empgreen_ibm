@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmpGreen Feedback Form</title>
+    <link rel="stylesheet" href="form.css">
+    <link rel="stylesheet" href="form.js">
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nav bar</title>
+  <style>
+    *{
+  margin:0;
+  padding: 0;
+}
+
+.navBar{
+  display:flex;
+  justify-content:space-between;
+  background-color:#c1ff72;
+  position: sticky;
+ 
+}
+a{
+  text-decoration:none;
+  color:black;
+}
+.bar{
+  margin-top: 2rem;
+}
+#right{
+  width:53%;
+  display:flex;
+  gap:1.5rem; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#btn{
+  margin:1rem;
+  padding:0.5rem;
+  height:40px;
+  width:90px;
+  font-size: 12pt;
+  border-radius: 8px;
+  background-color: orange;
+  border:solid black;
+  border-width:2px;
+}
+#logo{
+  margin-left:1rem;
+  
+}
+  </style>
+</head>
+<body>
+    <nav class="navBar">
+        <img src="img/logo1.png" alt="logo" width="80px" id="logo" height="75px" >
+        <span id="right">
+       
+        <div class="bar"><a class="link" href="aboutus.html">ABOUT</a></div>
+        <div class="bar"><a class="link" href="renewable_resouces.html">RESOURCES</a></div>
+        <div class="bar"><a class="link"  href="sustainable development stats revised.html">STATISTICS</a></div>
+        <div class="bar"><a class="link" href="sustainable dev tools revised.html">TOOLS</a></div>
+        <div class="bar"><a class="link" href="community.html">JOIN US</a></div>
+        <div class="bar"><a class="link" href="form.html">OTHER</a></div>
+        <button id="btn"><a href="login.html">LOGIN</a></button></span>
+      </nav>
+      </body>
+    <div class="container">
+        <h1>EmpGreen Feedback Form<br></h1><br>
+        <form id="feedbackForm">
+            <div class="section">
+                <h2>1. Overall Experience</h2>
+                <label>How would you rate your overall experience with the EmpGreen website?</label>
+                <select name="experience" required>
+                    <option value="">Select</option>
+                    <option value="Excellent">Excellent</option>
+                    <option value="Good">Good</option>
+                    <option value="Average">Average</option>
+                    <option value="Poor">Poor</option>
+                </select>
+            </div>
+
+            <div class="section">
+                <h2>2. Content Quality</h2>
+                <label>How would you rate the quality of the content on our website?</label>
+                <select name="contentQuality" required>
+                    <option value="">Select</option>
+                    <option value="Excellent">Excellent</option>
+                    <option value="Good">Good</option>
+                    <option value="Average">Average</option>
+                    <option value="Poor">Poor</option>
+                </select>
+
+                <label>Is the information on renewable resources and energy helpful and informative?</label>
+                <select name="informationHelpful" required>
+                    <option value="">Select</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                    <option value="Somewhat">Somewhat</option>
+                </select>
+            </div>
+
+            <div class="section">
+                <h2>3. Website Usability</h2>
+                <label>How easy is it to navigate through the EmpGreen website?</label>
+                <select name="usability" required>
+                    <option value="">Select</option>
+                    <option value="Very Easy">Very Easy</option>
+                    <option value="Easy">Easy</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Difficult">Difficult</option>
+                    <option value="Very Difficult">Very Difficult</option>
+                </select>
+
+                <label>Did you encounter any issues while using the website? If yes, please describe them:</label>
+                <textarea name="issues" rows="4"></textarea>
+            </div>
+
+            <div class="section">
+                <h2>4. Design and Layout</h2>
+                <label>How would you rate the design and layout of our website?</label>
+                <select name="design" required>
+                    <option value="">Select</option>
+                    <option value="Excellent">Excellent</option>
+                    <option value="Good">Good</option>
+                    <option value="Average">Average</option>
+                    <option value="Poor">Poor</option>
+                </select>
+
+                <label>Do you have any suggestions for improving the design and layout?</label>
+                <textarea name="designSuggestions" rows="4"></textarea>
+            </div>
+
+            <div class="section">
+                <h2>5. Specific Content</h2>
+                <label>Which sections of the website did you find most useful? (Check all that apply)</label>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" name="usefulSections" value="Renewable Energy Sources"> Renewable Energy Sources</label>
+                    <label><input type="checkbox" name="usefulSections" value="Energy Efficiency Tips"> Energy Efficiency Tips</label>
+                    <label><input type="checkbox" name="usefulSections" value="Latest News and Updates"> Latest News and Updates</label>
+                    <label><input type="checkbox" name="usefulSections" value="Educational Resources"> Educational Resources</label>
+                    <label><input type="checkbox" name="usefulSections" value="Other"> Other: <input type="text" name="otherUsefulSection"></label>
+                </div>
+
+                <label>Are there any topics or sections you would like to see added or expanded?</label>
+                <textarea name="topicsSuggestions" rows="4"></textarea>
+            </div>
+
+            <div class="section">
+                <h2>6. User Engagement</h2>
+                <label>How likely are you to recommend EmpGreen to others?</label>
+                <select name="recommend" required>
+                    <option value="">Select</option>
+                    <option value="Very Likely">Very Likely</option>
+                    <option value="Likely">Likely</option>
+                    <option value="Neutral">Neutral</option>
+                    <option value="Unlikely">Unlikely</option>
+                    <option value="Very Unlikely">Very Unlikely</option>
+                </select>
+
+                <label>Would you be interested in subscribing to our newsletter for updates and tips on renewable energy?</label>
+                <select name="subscribe" required>
+                    <option value="">Select</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+
+            <div class="section">
+                <h2>7. Additional Comments</h2>
+                <label>Please share any additional comments or suggestions you have:</label>
+                <textarea name="additionalComments" rows="4"></textarea>
+            </div>
+
+            <div class="section">
+                <h2>8. Contact Information (Optional)</h2>
+                <label>If you would like us to follow up with you, please provide your contact information:</label>
+                <label>Name: <input type="text" name="name"></label>
+                <label>Email: <input type="email" name="email"></label>
+            </div>
+            
+            <button type="submit">Submit Feedback</button><br>
+            <h1>FAQs</h1>
+    </header>
+    <section class="faq">
+        <div class="faq-item">
+            <h2 class="question">What is renewable energy?</h2>
+            <p class="answer">Renewable energy comes from sources that can be replenished naturally, such as solar, wind, hydro, and geothermal energy.</p>
+        </div>
+        <div class="faq-item">
+            <h2 class="question">Why is renewable energy important?</h2>
+            <p class="answer">Renewable energy is crucial for reducing greenhouse gas emissions, decreasing pollution, and providing a sustainable energy source for future generations.</p>
+        </div>
+        <div class="faq-item">
+            <h2 class="question">How can I switch to renewable energy?</h2>
+            <p class="answer">You can switch to renewable energy by installing solar panels, subscribing to a green energy plan from your utility provider, or using renewable energy certificates.</p>
+        </div>
+        <!-- Add more FAQ items as needed -->
+    </section><br><br>
+
+        </form>
+    </div>
+
+    <script src="form.js"></script>
+</body>
+</html>
